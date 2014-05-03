@@ -1,4 +1,5 @@
 TrainingRecipes
 ===============
 
-Python training  samples repository
+Personal programming training  samples repository
+
