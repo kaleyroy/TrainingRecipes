@@ -9,3 +9,13 @@ E:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern
 E:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\Repository.Pattern.EF5\obj\Debug\Repository.Pattern.EF5.dll
 E:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\Repository.Pattern.EF5\obj\Debug\Repository.Pattern.EF5.pdb
 E:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\Repository.Pattern.EF5\bin\Debug\LinqKit.dll
+C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\Repository.Pattern.EF5\bin\Debug\Repository.Pattern.EF5.dll.config
+C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\Repository.Pattern.EF5\bin\Debug\Repository.Pattern.EF5.dll
+C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\Repository.Pattern.EF5\bin\Debug\Repository.Pattern.EF5.pdb
+C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\Repository.Pattern.EF5\bin\Debug\EntityFramework.dll
+C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\Repository.Pattern.EF5\bin\Debug\LinqKit.dll
+C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\Repository.Pattern.EF5\bin\Debug\Repository.Pattern.dll
+C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\Repository.Pattern.EF5\bin\Debug\Repository.Pattern.pdb
+C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\Repository.Pattern.EF5\obj\Debug\Repository.Pattern.EF5.csprojResolveAssemblyReference.cache
+C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\Repository.Pattern.EF5\obj\Debug\Repository.Pattern.EF5.dll
+C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\Repository.Pattern.EF5\obj\Debug\Repository.Pattern.EF5.pdb

@@ -1,0 +1,5 @@
+C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\EF5Repository.Console\bin\Debug\EF5Repository.Console.dll
+C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\EF5Repository.Console\bin\Debug\EF5Repository.Console.pdb
+C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\EF5Repository.Console\obj\Debug\EF5Repository.Console.csprojResolveAssemblyReference.cache
+C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\EF5Repository.Console\obj\Debug\EF5Repository.Console.dll
+C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\EF5Repository.Console\obj\Debug\EF5Repository.Console.pdb

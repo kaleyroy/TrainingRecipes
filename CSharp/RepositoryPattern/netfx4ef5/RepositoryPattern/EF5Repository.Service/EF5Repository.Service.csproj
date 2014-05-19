@@ -39,7 +39,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="AutoMappings.cs" />
+    <Compile Include="ICustomerService.cs" />
+    <Compile Include="IProductService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -47,6 +49,18 @@
       <Project>{31d096a4-3beb-46bd-a630-fc7ea17da414}</Project>
       <Name>EF5Repository.Data</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Repository.Pattern.EF5\Repository.Pattern.EF5.csproj">
+      <Project>{e7ee5105-2944-47c4-88ee-f387935c3da4}</Project>
+      <Name>Repository.Pattern.EF5</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Repository.Pattern\Repository.Pattern.csproj">
+      <Project>{6e682a14-c872-4813-b620-76e108dea683}</Project>
+      <Name>Repository.Pattern</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DataObjects\" />
+    <Folder Include="ServiceImpls\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

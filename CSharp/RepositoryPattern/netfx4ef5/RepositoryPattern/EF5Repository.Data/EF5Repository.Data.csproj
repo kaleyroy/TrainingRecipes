@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="RepositoryService.cs" />
     <Compile Include="BaseEntity.cs" />
     <Compile Include="BaseEntityMap.cs" />
     <Compile Include="Migrations\201405140805090_InitTables.cs" />

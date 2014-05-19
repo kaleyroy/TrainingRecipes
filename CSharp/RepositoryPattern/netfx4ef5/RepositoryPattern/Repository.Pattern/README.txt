@@ -2,8 +2,8 @@
 "Generic Unit of Work & (Extensible) Repositories Framework"
 https://genericunitofworkandrepositories.codeplex.com (v3.3)
 
-Due to the original project depended on Entity Framework6 + Net Framework4.5,
-But my solution based on EntityFramework5 + Net Framework 4,so i made some changes for this project.
+Due to the original project depended on Entity Framework 6 + Net Framework 4.5,
+But my solution based on EntityFramework 5 + Net Framework 4,so i made some changes for this project.
 
 The Change Items:
 

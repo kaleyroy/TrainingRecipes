@@ -18,8 +18,8 @@ namespace EF5Repository.Test
         [TestMethod]
         public void AddCustomerTest()
         {
-            using(IDataContext dataContext = new ModelDataContext())
-            using (IUnitOfWork unitOfWork = new UnitOfWork(dataContext) )
+            using(var dataContext = new ModelDataContext())
+            using (var unitOfWork = new UnitOfWork(dataContext) )
             {
                 var customerID = Guid.NewGuid();
 
@@ -53,8 +53,8 @@ namespace EF5Repository.Test
         [TestMethod]
         public void GetCustomerTest()
         {
-            using (IDataContext dataContext = new ModelDataContext())
-            using (IUnitOfWork unitOfWork = new UnitOfWork(dataContext))
+            using (var dataContext = new ModelDataContext())
+            using (var unitOfWork = new UnitOfWork(dataContext))
             {
                 var customerID = Guid.Parse("46de4e9f-564f-4273-bbd1-45bed3166668");
 
@@ -69,8 +69,8 @@ namespace EF5Repository.Test
         [TestMethod]
         public void QueryCustomersByRegionTest()
         {
-            using (IDataContext dataContext = new ModelDataContext())
-            using (IUnitOfWork unitOfWork = new UnitOfWork(dataContext))
+            using (var dataContext = new ModelDataContext())
+            using (var unitOfWork = new UnitOfWork(dataContext))
             {
                 var customerRegion = "AA";
 
@@ -84,8 +84,8 @@ namespace EF5Repository.Test
         [TestMethod]
         public void QueryCustomersByRegionWithPaginationTest()
         {
-            using (IDataContext dataContext = new ModelDataContext())
-            using (IUnitOfWork unitOfWork = new UnitOfWork(dataContext))
+            using (var dataContext = new ModelDataContext())
+            using (var unitOfWork = new UnitOfWork(dataContext))
             {
                 var customerRegion = "AA";
 
@@ -102,8 +102,8 @@ namespace EF5Repository.Test
             var customerRegion = "AA";
             var customerCity = "London";
 
-            using (IDataContext dataContext = new ModelDataContext())
-            using (IUnitOfWork unitOfWork = new UnitOfWork(dataContext))
+            using (var dataContext = new ModelDataContext())
+            using (var unitOfWork = new UnitOfWork(dataContext))
             {
 
                 var customerRepository = unitOfWork.Repository<Customer>();
