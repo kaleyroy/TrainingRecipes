@@ -10,9 +10,9 @@ namespace EF5Repository.Data.Models.Mappings
         public ProductMap()
             : base()
         {
-            this.ToTable("Product");
+           ToTable("Product");
 
-            this.HasOptional(p => p.Category)
+           HasOptional(p => p.Category)
                 .WithMany(c => c.Products)
                 .HasForeignKey(p => p.CategoryID);
             

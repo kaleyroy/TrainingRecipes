@@ -22,8 +22,8 @@ C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern
 C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\EF5Repository.Data\bin\Debug\Repository.Pattern.EF5.pdb
 C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\EF5Repository.Data\bin\Debug\Repository.Pattern.pdb
 C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\EF5Repository.Data\obj\Debug\EF5Repository.Data.csprojResolveAssemblyReference.cache
-C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\EF5Repository.Data\obj\Debug\EF5Repository.Data.Migrations.InitTables.resources
-C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\EF5Repository.Data\obj\Debug\EF5Repository.Data.csproj.GenerateResource.Cache
 C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\EF5Repository.Data\obj\Debug\EF5Repository.Data.dll
 C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\EF5Repository.Data\obj\Debug\EF5Repository.Data.pdb
 E:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\EF5Repository.Data\obj\Debug\EF5Repository.Data.Migrations.Restructure_Customer.resources
+C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\EF5Repository.Data\obj\Debug\EF5Repository.Data.Migrations.InitTables.resources
+C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\EF5Repository.Data\obj\Debug\EF5Repository.Data.csproj.GenerateResource.Cache

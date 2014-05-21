@@ -12,14 +12,14 @@ namespace EF5Repository.Data.Queries
     {
         public CustomerQuery ByRegion(string region)
         {
-            this.Add(c => c.Region.Equals(region));
+            Add(c => c.Region.Equals(region));
 
             return this;
         }
 
         public CustomerQuery ByCity(string city)
         {
-            this.And(c => c.City.Equals(city));
+            And(c => c.City.Equals(city));
 
             return this;
         }

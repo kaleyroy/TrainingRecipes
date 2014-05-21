@@ -3,7 +3,7 @@ namespace EF5Repository.Data.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class Restructure_Customer : DbMigration
+    public partial class InitTables : DbMigration
     {
         public override void Up()
         {

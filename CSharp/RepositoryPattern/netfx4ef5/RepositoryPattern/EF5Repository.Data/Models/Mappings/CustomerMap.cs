@@ -10,7 +10,7 @@ namespace EF5Repository.Data.Models.Mappings
         public CustomerMap()
             : base()
         {
-            this.ToTable("Customer");
+            ToTable("Customer");
         }
     }
 }

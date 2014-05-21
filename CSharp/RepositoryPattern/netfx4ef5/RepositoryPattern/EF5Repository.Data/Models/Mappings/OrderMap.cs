@@ -10,9 +10,9 @@ namespace EF5Repository.Data.Models.Mappings
         public OrderMap()
             : base()
         {
-            this.ToTable("Order");
+            ToTable("Order");
 
-            this.HasOptional(o => o.Customer)
+            HasOptional(o => o.Customer)
                 .WithMany(c => c.Orders)
                 .HasForeignKey(o => o.CustomerID);
         }

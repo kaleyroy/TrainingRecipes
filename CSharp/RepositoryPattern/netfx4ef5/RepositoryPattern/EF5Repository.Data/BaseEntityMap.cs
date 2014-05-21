@@ -11,8 +11,8 @@ namespace EF5Repository.Data
     {
         public BaseEntityMap()
         {
-            this.HasKey(e => e.ID);
-            this.Property(e => e.ID).HasDatabaseGeneratedOption(DatabaseGeneratedOption.None);
+            HasKey(e => e.ID);
+            Property(e => e.ID).HasDatabaseGeneratedOption(DatabaseGeneratedOption.None);
         }
     }
 }

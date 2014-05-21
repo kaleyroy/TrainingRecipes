@@ -45,17 +45,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\201405210637283_Restructure_Customer.cs" />
-    <Compile Include="Migrations\201405210637283_Restructure_Customer.Designer.cs">
-      <DependentUpon>201405210637283_Restructure_Customer.cs</DependentUpon>
+    <Compile Include="Migrations\201405211445483_InitTables.cs" />
+    <Compile Include="Migrations\201405211445483_InitTables.Designer.cs">
+      <DependentUpon>201405211445483_InitTables.cs</DependentUpon>
     </Compile>
     <Compile Include="RepositoryService.cs" />
     <Compile Include="BaseEntity.cs" />
     <Compile Include="BaseEntityMap.cs" />
-    <Compile Include="Migrations\201405140805090_InitTables.cs" />
-    <Compile Include="Migrations\201405140805090_InitTables.Designer.cs">
-      <DependentUpon>201405140805090_InitTables.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -90,11 +86,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201405140805090_InitTables.resx">
-      <DependentUpon>201405140805090_InitTables.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201405210637283_Restructure_Customer.resx">
-      <DependentUpon>201405210637283_Restructure_Customer.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201405211445483_InitTables.resx">
+      <DependentUpon>201405211445483_InitTables.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

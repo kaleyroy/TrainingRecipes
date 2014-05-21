@@ -11,7 +11,7 @@ namespace EF5Repository.Data.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201405140805090_InitTables"; }
+            get { return "201405211445483_InitTables"; }
         }
         
         string IMigrationMetadata.Source

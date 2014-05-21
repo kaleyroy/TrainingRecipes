@@ -12,7 +12,7 @@ namespace EF5Repository.Data.Models.Mappings
         public CategoryMap()
             : base()
         {
-            this.ToTable("Category");
+            ToTable("Category");
 
         }
     }

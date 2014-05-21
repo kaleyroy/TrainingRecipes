@@ -54,6 +54,9 @@
     <Compile Include="DataObjects\ProductDataObject.cs" />
     <Compile Include="ICustomerService.cs" />
     <Compile Include="IProductService.cs" />
+    <Compile Include="Profiles\CustomerProfile.cs" />
+    <Compile Include="Profiles\OrderProfile.cs" />
+    <Compile Include="Profiles\ProductProfile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

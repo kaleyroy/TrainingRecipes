@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Data;
 using System.Data.Entity;
 
 using Repository.Pattern.DataContext;
 using Repository.Pattern.Infrastructure;
+
 
 namespace Repository.Pattern.EF5
 {
@@ -28,6 +30,16 @@ namespace Repository.Pattern.EF5
         public override int SaveChanges()
         {
             SyncObjectsStatePreCommit();
+
+            //var entityList = ChangeTracker.Entries().Where(p => p.State == EntityState.Added || p.State == EntityState.Deleted || p.State == EntityState.Modified);
+            //foreach (var entity in entityList)
+            //{
+            //    if (entity.State == EntityState.Added)
+            //    {
+                   
+            //    }
+            //}
+
             var changes = base.SaveChanges();
             SyncObjectsStatePostCommit();
             return changes;

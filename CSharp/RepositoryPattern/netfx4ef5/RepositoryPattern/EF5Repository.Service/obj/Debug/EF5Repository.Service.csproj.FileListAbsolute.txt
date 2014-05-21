@@ -7,8 +7,10 @@ C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern
 C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\EF5Repository.Service\bin\Debug\LinqKit.dll
 C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\EF5Repository.Service\bin\Debug\EF5Repository.Data.pdb
 C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\EF5Repository.Service\bin\Debug\Repository.Pattern.EF5.pdb
-C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\EF5Repository.Service\bin\Debug\EntityFramework.xml
 C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\EF5Repository.Service\bin\Debug\Repository.Pattern.pdb
 C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\EF5Repository.Service\obj\Debug\EF5Repository.Service.csprojResolveAssemblyReference.cache
 C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\EF5Repository.Service\obj\Debug\EF5Repository.Service.dll
 C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\EF5Repository.Service\obj\Debug\EF5Repository.Service.pdb
+C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\EF5Repository.Service\bin\Debug\AutoMapper.Net4.dll
+C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\EF5Repository.Service\bin\Debug\AutoMapper.dll
+C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\EF5Repository.Service\bin\Debug\AutoMapper.xml

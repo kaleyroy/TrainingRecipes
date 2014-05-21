@@ -14,6 +14,7 @@ namespace EF5Repository.Data.Models
         public int UnitsOnOrder { get; set; }
         public bool Discontinued { get; set; }
 
+        public Guid? CategoryID { get; set; }
         public virtual Category Category { get; set; }
         public virtual ICollection<OrderDetail> OrderDetails { get; set; }
 
