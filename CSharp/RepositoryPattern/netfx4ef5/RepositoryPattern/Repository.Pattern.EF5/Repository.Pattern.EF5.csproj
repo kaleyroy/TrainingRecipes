@@ -55,6 +55,7 @@
     <Compile Include="Repository.cs" />
     <Compile Include="StateHelper.cs" />
     <Compile Include="UnitOfWork.cs" />
+    <Compile Include="UnitOfWorkScope.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Repository.Pattern\Repository.Pattern.csproj">

@@ -26,9 +26,7 @@ namespace EF5Repository.Test
                 var customer = new Customer()
                 {
                      ID = Guid.NewGuid(),
-                     CompanyName = "BBC",
-                     ContactName = "BBC Contact",
-                     ContactTitle = "BBC Partner Contact",
+                     Name = "BBC",
                      Address = "No.1 Bee Street",
                      City = "London",
                      Country = "UK",

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace EF5Repository.Service
 {
-    public sealed partial class AutoMappings
+    public static class AutoMapConfig
     {
         public static void Config()
         {
