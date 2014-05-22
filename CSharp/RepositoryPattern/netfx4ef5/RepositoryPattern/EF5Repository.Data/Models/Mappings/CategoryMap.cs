@@ -7,7 +7,7 @@ using EF5Repository.Data.Models;
 
 namespace EF5Repository.Data.Models.Mappings
 {
-    internal class CategoryMap : BaseEntityMap<Category>
+    internal class CategoryMap : EntityMapBase<Category>
     {
         public CategoryMap()
             : base()

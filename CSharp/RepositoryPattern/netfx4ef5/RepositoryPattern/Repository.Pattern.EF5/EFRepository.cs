@@ -13,7 +13,7 @@ using Repository.Pattern.Infrastructure;
 
 namespace Repository.Pattern.EF5
 {
-    public class Repository<TEntity> : IRepository<TEntity> where TEntity : Entity
+    public class EFRepository<TEntity> : IEFRepository<TEntity> where TEntity : Entity
     {
         #region Private Fields
         private readonly IDataContext _context;
@@ -21,7 +21,7 @@ namespace Repository.Pattern.EF5
         private readonly IUnitOfWork _unitOfWork;
         #endregion Private Fields
 
-        public Repository(IDataContext context, IUnitOfWork unitOfWork)
+        public EFRepository(IDataContext context, IUnitOfWork unitOfWork)
         {
             _context = context;
             _unitOfWork = unitOfWork;
@@ -42,6 +42,11 @@ namespace Repository.Pattern.EF5
             //        _dbSet = fakeContext.Set<TEntity>();
             //    }
             //}
+        }
+
+        public DbContext Context
+        {
+            get { return _context as DbContext; }
         }
 
         public virtual TEntity Find(params object[] keyValues)

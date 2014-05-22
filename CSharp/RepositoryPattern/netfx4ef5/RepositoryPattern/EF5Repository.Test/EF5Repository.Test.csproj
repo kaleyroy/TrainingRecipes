@@ -62,11 +62,16 @@
     <Compile Include="Repository\CustomerRepositoryTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\ProductRepsitoryTest.cs" />
+    <Compile Include="Service\CustomerServiceTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EF5Repository.Data\EF5Repository.Data.csproj">
       <Project>{31d096a4-3beb-46bd-a630-fc7ea17da414}</Project>
       <Name>EF5Repository.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EF5Repository.Service\EF5Repository.Service.csproj">
+      <Project>{50405320-71fc-4359-8a0f-bb2eea4226a7}</Project>
+      <Name>EF5Repository.Service</Name>
     </ProjectReference>
     <ProjectReference Include="..\Repository.Pattern.EF5\Repository.Pattern.EF5.csproj">
       <Project>{e7ee5105-2944-47c4-88ee-f387935c3da4}</Project>

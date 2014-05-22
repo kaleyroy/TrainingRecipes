@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace EF5Repository.Service.DataObjects
+using Repository.Pattern.EF5;
+
+namespace EF5Repository.Data
 {
-    public class BaseDataObject
+    public class EntityBase : Entity
     {
         public Guid ID { get; set; }
     }

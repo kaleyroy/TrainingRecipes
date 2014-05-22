@@ -5,7 +5,7 @@ using System.Text;
 
 namespace EF5Repository.Service.DataObjects
 {
-    public class CustomerDataObject : BaseDataObject
+    public class CustomerDataObject : DataObject
     {
         public string Name { get; set; }
         public string Address { get; set; }

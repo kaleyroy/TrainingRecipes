@@ -4,7 +4,7 @@ using Repository.Pattern.EF5;
 
 namespace EF5Repository.Data.Models
 {
-    public partial class Customer : BaseEntity
+    public partial class Customer : EntityBase
     {
         public Customer() { }
 

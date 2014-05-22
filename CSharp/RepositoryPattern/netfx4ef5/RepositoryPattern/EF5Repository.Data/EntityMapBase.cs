@@ -7,9 +7,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EF5Repository.Data
 {
-    public class BaseEntityMap<TEntity> : EntityTypeConfiguration<TEntity> where TEntity : BaseEntity
+    public class EntityMapBase<TEntity> : EntityTypeConfiguration<TEntity> where TEntity : EntityBase
     {
-        public BaseEntityMap()
+        public EntityMapBase()
         {
             HasKey(e => e.ID);
             Property(e => e.ID).HasDatabaseGeneratedOption(DatabaseGeneratedOption.None);

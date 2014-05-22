@@ -67,7 +67,7 @@ namespace Repository.Pattern.EF5
                 return (IRepository<TEntity>)_repositories[type];
             }
 
-            var repositoryType = typeof(Repository<>);
+            var repositoryType = typeof(EFRepository<>);
 
             _repositories.Add(type, Activator.CreateInstance(repositoryType.MakeGenericType(typeof(TEntity)), _dataContext, this));
             return (IRepository<TEntity>)_repositories[type];

@@ -45,13 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\201405211445483_InitTables.cs" />
-    <Compile Include="Migrations\201405211445483_InitTables.Designer.cs">
-      <DependentUpon>201405211445483_InitTables.cs</DependentUpon>
+    <Compile Include="EntityBase.cs" />
+    <Compile Include="EntityMapBase.cs" />
+    <Compile Include="Migrations\201405220903385_InitTables.cs" />
+    <Compile Include="Migrations\201405220903385_InitTables.Designer.cs">
+      <DependentUpon>201405220903385_InitTables.cs</DependentUpon>
     </Compile>
-    <Compile Include="RepositoryService.cs" />
-    <Compile Include="BaseEntity.cs" />
-    <Compile Include="BaseEntityMap.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -68,6 +67,7 @@
     <Compile Include="ModelDataContext.cs" />
     <Compile Include="Queries\CustomerQuery.cs" />
     <Compile Include="Repositories\CustomerRepository.cs" />
+    <Compile Include="Repositories\RepositoryExtension.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Repository.Pattern.EF5\Repository.Pattern.EF5.csproj">
@@ -86,8 +86,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201405211445483_InitTables.resx">
-      <DependentUpon>201405211445483_InitTables.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201405220903385_InitTables.resx">
+      <DependentUpon>201405220903385_InitTables.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

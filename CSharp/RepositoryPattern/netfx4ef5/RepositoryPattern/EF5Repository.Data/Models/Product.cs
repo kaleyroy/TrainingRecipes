@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace EF5Repository.Data.Models
 {
-    public partial class Product : BaseEntity
+    public partial class Product : EntityBase
     {
         public Product() { }
 

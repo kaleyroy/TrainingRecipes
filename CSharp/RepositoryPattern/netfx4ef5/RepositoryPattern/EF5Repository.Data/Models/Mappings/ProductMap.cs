@@ -5,7 +5,7 @@ using System.Text;
 
 namespace EF5Repository.Data.Models.Mappings
 {
-    internal class ProductMap : BaseEntityMap<Product>
+    internal class ProductMap : EntityMapBase<Product>
     {
         public ProductMap()
             : base()

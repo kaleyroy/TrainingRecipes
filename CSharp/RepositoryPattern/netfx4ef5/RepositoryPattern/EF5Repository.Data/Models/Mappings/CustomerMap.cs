@@ -5,7 +5,7 @@ using System.Text;
 
 namespace EF5Repository.Data.Models.Mappings
 {
-    internal class CustomerMap : BaseEntityMap<Customer>
+    internal class CustomerMap : EntityMapBase<Customer>
     {
         public CustomerMap()
             : base()

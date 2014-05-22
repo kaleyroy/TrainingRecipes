@@ -5,7 +5,7 @@ using System.Text;
 
 namespace EF5Repository.Data.Models.Mappings
 {
-    internal class OrderMap : BaseEntityMap<Order>
+    internal class OrderMap : EntityMapBase<Order>
     {
         public OrderMap()
             : base()

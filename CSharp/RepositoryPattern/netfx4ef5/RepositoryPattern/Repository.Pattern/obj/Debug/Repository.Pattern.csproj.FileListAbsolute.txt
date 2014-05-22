@@ -52,7 +52,6 @@ E:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern
 E:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\Repository.Pattern\bin\Debug\System.Net.Http.dll
 E:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\Repository.Pattern\bin\Debug\System.Net.Http.xml
 E:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\Repository.Pattern\bin\Debug\EntityFramework.dll
-E:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\Repository.Pattern\obj\Debug\Repository.Pattern.csprojResolveAssemblyReference.cache
 C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\Repository.Pattern\bin\Debug\Repository.Pattern.dll.config
 C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\Repository.Pattern\bin\Debug\Repository.Pattern.dll
 C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\Repository.Pattern\bin\Debug\Repository.Pattern.pdb
@@ -62,3 +61,4 @@ C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern
 C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\Repository.Pattern\obj\Debug\Repository.Pattern.dll
 C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\Repository.Pattern\obj\Debug\Repository.Pattern.pdb
 C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\Repository.Pattern\obj\Debug\Repository.Pattern.csprojResolveAssemblyReference.cache
+E:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\Repository.Pattern\obj\Debug\Repository.Pattern.csprojResolveAssemblyReference.cache

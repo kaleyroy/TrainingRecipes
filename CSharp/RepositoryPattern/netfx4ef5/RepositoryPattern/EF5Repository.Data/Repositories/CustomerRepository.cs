@@ -11,14 +11,14 @@ namespace EF5Repository.Data.Repositories
 {
     public static class CustomerRepository
     {
-        public static IEnumerable<Customer> QueryByRegion(this IRepository<Customer> repository, string region)
+        public static IEnumerable<Customer> SelectByRegion(this IRepository<Customer> repository, string region)
         {
             return repository.Queryable()
                             .Where(c => c.Region.Equals(region))
                             .AsEnumerable();
         }
 
-        public static PagedResult<Customer> QueryByRegionWithPagination(this IRepository<Customer> repository, string region,int page = 1,int pageSize = 5)
+        public static PagedResult<Customer> SelectByRegionWithPagination(this IRepository<Customer> repository, string region,int page = 1,int pageSize = 5)
         {
             var totalRecords = 0;
 
@@ -30,7 +30,7 @@ namespace EF5Repository.Data.Repositories
             return new PagedResult<Customer>(totalRecords, pageSize, page, pagedData);
         }
 
-        public static IEnumerable<Customer> QueryByRegionAndCity(this IRepository<Customer> repository, string region, string city)
+        public static IEnumerable<Customer> SelectByRegionAndCity(this IRepository<Customer> repository, string region, string city)
         {
             CustomerQuery filterQuery = new CustomerQuery();
 

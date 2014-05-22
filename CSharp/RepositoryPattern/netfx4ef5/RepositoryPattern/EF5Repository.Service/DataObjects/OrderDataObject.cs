@@ -5,7 +5,7 @@ using System.Text;
 
 namespace EF5Repository.Service.DataObjects
 {
-    public class OrderDataObject : BaseDataObject
+    public class OrderDataObject : DataObject
     {
         public DateTime OrderDate { get; set; }
         public decimal SubTotal { get; set; }

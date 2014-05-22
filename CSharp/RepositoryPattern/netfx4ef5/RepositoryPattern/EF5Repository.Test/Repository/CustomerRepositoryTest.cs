@@ -73,7 +73,7 @@ namespace EF5Repository.Test
                 var customerRegion = "AA";
 
                 var customerRepository = unitOfWork.Repository<Customer>();
-                var customers = customerRepository.QueryByRegion(customerRegion);
+                var customers = customerRepository.SelectByRegion(customerRegion);
 
                 Assert.AreEqual(3, customers.Count());
             }
@@ -88,7 +88,7 @@ namespace EF5Repository.Test
                 var customerRegion = "AA";
 
                 var customerRepository = unitOfWork.Repository<Customer>();
-                var pageCustomers = customerRepository.QueryByRegionWithPagination(customerRegion);
+                var pageCustomers = customerRepository.SelectByRegionWithPagination(customerRegion);
 
                 Assert.AreEqual(3, pageCustomers.PagedData.Count());
             }
@@ -106,7 +106,7 @@ namespace EF5Repository.Test
 
                 var customerRepository = unitOfWork.Repository<Customer>();
 
-                var customers = customerRepository.QueryByRegionAndCity(customerRegion, customerCity);
+                var customers = customerRepository.SelectByRegionAndCity(customerRegion, customerCity);
 
                 Assert.AreEqual(3, customers.ToList().Count);
 

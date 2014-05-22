@@ -5,7 +5,7 @@ using System.Text;
 
 namespace EF5Repository.Service.DataObjects
 {
-    public class OrderDetailDataObject : BaseDataObject
+    public class OrderDetailDataObject : DataObject
     {
         public decimal UnitPrice { get; set; }
         public int Quantity { get; set; }

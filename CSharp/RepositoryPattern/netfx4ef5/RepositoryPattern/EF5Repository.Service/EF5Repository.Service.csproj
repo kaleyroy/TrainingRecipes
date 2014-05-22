@@ -45,19 +45,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AutoMapConfig.cs" />
-    <Compile Include="DataObjects\BaseDataObject.cs" />
+    <Compile Include="DataObject.cs" />
     <Compile Include="DataObjects\CategoryDataObject.cs" />
     <Compile Include="DataObjects\CustomerDataObject.cs" />
     <Compile Include="DataObjects\OrderDataObject.cs" />
     <Compile Include="DataObjects\OrderDetailDataObject.cs" />
+    <Compile Include="DataObjects\PaginationDataObject.cs" />
     <Compile Include="DataObjects\ProductDataObject.cs" />
     <Compile Include="ICustomerService.cs" />
     <Compile Include="IProductService.cs" />
+    <Compile Include="PaginationExtension.cs" />
     <Compile Include="Profiles\CustomerProfile.cs" />
     <Compile Include="Profiles\OrderProfile.cs" />
     <Compile Include="Profiles\ProductProfile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceImpls\CustomerService.cs" />
+    <Compile Include="UnitOfWorkService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EF5Repository.Data\EF5Repository.Data.csproj">
@@ -73,9 +76,7 @@
       <Name>Repository.Pattern</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ServiceImpls\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>

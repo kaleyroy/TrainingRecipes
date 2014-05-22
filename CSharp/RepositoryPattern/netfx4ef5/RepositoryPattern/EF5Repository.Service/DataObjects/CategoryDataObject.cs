@@ -5,7 +5,7 @@ using System.Text;
 
 namespace EF5Repository.Service.DataObjects
 {
-    public class CategoryDataObject : BaseDataObject
+    public class CategoryDataObject : DataObject
     {
         public string CategoryName { get; set; }
         public string Description { get; set; }

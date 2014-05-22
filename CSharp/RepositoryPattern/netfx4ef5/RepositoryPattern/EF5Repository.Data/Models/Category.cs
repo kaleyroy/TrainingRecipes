@@ -4,7 +4,7 @@ using Repository.Pattern.EF5;
 
 namespace EF5Repository.Data.Models
 {
-    public partial class Category : BaseEntity
+    public partial class Category : EntityBase
     {
         public Category() { }
 

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace EF5Repository.Data.Models
 {
-    public partial class Order : BaseEntity
+    public partial class Order : EntityBase
     {
         public Order(){ }
       

@@ -15,24 +15,24 @@ namespace Repository.Pattern.EF5
         #region Private Fields
         private readonly Expression<Func<TEntity, bool>> _expression;
         private readonly List<Expression<Func<TEntity, object>>> _includes;
-        private readonly Repository<TEntity> _repository;
+        private readonly EFRepository<TEntity> _repository;
         private Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> _orderBy;
         #endregion Private Fields
 
         #region Constructors
-        public QueryFluent(Repository<TEntity> repository)
+        public QueryFluent(EFRepository<TEntity> repository)
         {
             _repository = repository;
             _includes = new List<Expression<Func<TEntity, object>>>();
         }
 
-        public QueryFluent(Repository<TEntity> repository, IQueryObject<TEntity> queryObject)
+        public QueryFluent(EFRepository<TEntity> repository, IQueryObject<TEntity> queryObject)
             : this(repository)
         {
             _expression = queryObject.Query();
         }
 
-        public QueryFluent(Repository<TEntity> repository, Expression<Func<TEntity, bool>> expression)
+        public QueryFluent(EFRepository<TEntity> repository, Expression<Func<TEntity, bool>> expression)
             : this(repository)
         {
             _expression = expression;

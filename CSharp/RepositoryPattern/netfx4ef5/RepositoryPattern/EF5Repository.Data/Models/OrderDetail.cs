@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace EF5Repository.Data.Models
 {
-    public partial class OrderDetail : BaseEntity
+    public partial class OrderDetail : EntityBase
     {  
         public decimal UnitPrice { get; set; }
         public int Quantity { get; set; }
