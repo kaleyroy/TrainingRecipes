@@ -26,3 +26,4 @@ C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern
 C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\EF5Repository.Data\obj\Debug\EF5Repository.Data.csproj.GenerateResource.Cache
 E:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\EF5Repository.Data\obj\Debug\EF5Repository.Data.Migrations.InitTables.resources
 E:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\EF5Repository.Data\obj\Debug\EF5Repository.Data.csproj.GenerateResource.Cache
+C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\EF5Repository.Data\bin\Debug\EntityFramework.xml

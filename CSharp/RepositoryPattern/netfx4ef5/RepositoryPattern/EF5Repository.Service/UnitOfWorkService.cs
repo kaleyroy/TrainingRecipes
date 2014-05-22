@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Data.Entity;
 
 using AutoMapper;
 using Repository.Pattern.UnitOfWork;
 using Repository.Pattern.Repositories;
 using Repository.Pattern.Infrastructure;
+using Repository.Pattern.EF5;
 using EF5Repository.Data;
 using EF5Repository.Data.Repositories;
 
@@ -61,7 +63,7 @@ namespace EF5Repository.Service
             return result;
         }
 
-        protected IEnumerable<TDataObject> PerformApplyObjects<TDataObject,TEntity>(
+        protected IEnumerable<TDataObject> PerformUpdateObjects<TDataObject,TEntity>(
             IEnumerable<DataObject> dataObjects,
             IRepository<TEntity> repository) where TDataObject : DataObject where TEntity : EntityBase
         {
@@ -75,13 +77,19 @@ namespace EF5Repository.Service
             if (dataObjects.Count() > 0)
             {
                 foreach (var dataObject in dataObjects)
-                {
+                {             
                     var entity = repository.Find(dataObject.ID);
+                    if (entity == null)
+                        throw new ArgumentNullException("entity");
 
-                    (repository as IRepository<EntityBase>).ApplyChanges(entity);
+                    var dbContext = (repository as IEFRepository<TEntity>).Context;
+                    var attachedEntry = dbContext.Entry<EntityBase>(entity);
+                    attachedEntry.CurrentValues.SetValues(dataObject);
+                    entity.ObjectState = ObjectState.Modified;
                    
                     result.Add(Mapper.Map<TEntity, TDataObject>(entity));
                 }
+
                 _unitOfWork.SaveChanges();
             }
             return result;
@@ -103,23 +111,25 @@ namespace EF5Repository.Service
 
             if (dataObjects.Count() > 0)
             {
+                List<TEntity> entities = new List<TEntity>();
                 foreach (var dataObject in dataObjects)
                 {
                     var entity = repository.Find(dataObject.ID);
-
                     fieldUpdateConfig(entity, dataObject);
-                    repository.Update(entity);
 
-                    result.Add(Mapper.Map<TEntity, TDataObject>(entity));
+                    entities.Add(entity);         
                 }
 
+                repository.UpdateRange(entities);
                 _unitOfWork.SaveChanges();
+
+                entities.ForEach(e => result.Add(Mapper.Map<TEntity, TDataObject>(e)));             
             }
 
             return result;
         }
 
-        protected void PerformRemoveObjects<TDataObject,TEntity>(
+        protected IEnumerable<TDataObject> PerformRemoveObjects<TDataObject, TEntity>(
             IEnumerable<TDataObject> dataObjects,
             IRepository<TEntity> repository, 
             Action<TDataObject> preDelete = null, 
@@ -130,22 +140,29 @@ namespace EF5Repository.Service
             if (repository == null)
                 throw new ArgumentNullException("repository");
 
+            List<TDataObject> result = new List<TDataObject>();
             if (dataObjects.Count() > 0)
             {
+                List<TEntity> entities = new List<TEntity>();
                 foreach (var dataObject in dataObjects)
                 {
                     if (preDelete != null)
                         preDelete(dataObject);
 
                     var entity = repository.Find(dataObject.ID);
-                    repository.Delete(entity);
+                    entities.Add(entity);
 
                     if (postDelete != null)
                         postDelete(dataObject);
                 }
 
+                repository.DeleteRange(entities);
                 _unitOfWork.SaveChanges();
+
+                entities.ForEach(e => Mapper.Map<TEntity, TDataObject>(e));
             }
+
+            return result;
         }
     }
 }

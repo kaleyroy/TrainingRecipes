@@ -31,3 +31,9 @@ E:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern
 E:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\EF5Repository.Test\bin\Debug\AutoMapper.dll
 E:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\EF5Repository.Test\bin\Debug\EF5Repository.Service.pdb
 E:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\EF5Repository.Test\bin\Debug\AutoMapper.xml
+C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\EF5Repository.Test\bin\Debug\AutoMapper.Net4.dll
+C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\EF5Repository.Test\bin\Debug\EF5Repository.Service.dll
+C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\EF5Repository.Test\bin\Debug\AutoMapper.dll
+C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\EF5Repository.Test\bin\Debug\EF5Repository.Service.pdb
+C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\EF5Repository.Test\bin\Debug\AutoMapper.xml
+C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\EF5Repository.Test\bin\Debug\EntityFramework.xml

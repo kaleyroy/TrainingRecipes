@@ -11,8 +11,9 @@ namespace EF5Repository.Service
     {
         IEnumerable<CustomerDataObject> Add(IEnumerable<CustomerDataObject> customers);
         IEnumerable<CustomerDataObject> Update(IEnumerable<CustomerDataObject> customers);
-        void Remove(IEnumerable<CustomerDataObject> customers);
+        IEnumerable<CustomerDataObject> Remove(IEnumerable<CustomerDataObject> customers);
 
+        CustomerDataObject GetByID(Guid id);
         IEnumerable<CustomerDataObject> GetByRegion(string customerRegion);
         PaginationDataObject<CustomerDataObject> GetByRegionWithPagination(string customerRegion);
     }

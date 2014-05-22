@@ -16,10 +16,10 @@ namespace EF5Repository.Service.ServiceImpls
     {
         private readonly IRepository<Customer> _customerRepository;
 
-        public CustomerService(IUnitOfWork unitOfWork, IRepository<Customer> customerRepository)
+        public CustomerService(IUnitOfWork unitOfWork)
             : base(unitOfWork)
         {
-            _customerRepository = customerRepository;
+            _customerRepository = unitOfWork.Repository<Customer>();
         }
 
         public IEnumerable<CustomerDataObject> Add(IEnumerable<CustomerDataObject> customers)
@@ -29,12 +29,19 @@ namespace EF5Repository.Service.ServiceImpls
 
         public IEnumerable<CustomerDataObject> Update(IEnumerable<CustomerDataObject> customers)
         {
-            return PerformApplyObjects<CustomerDataObject, Customer>(customers, _customerRepository);
+            return PerformUpdateObjects<CustomerDataObject, Customer>(customers, _customerRepository);
         }
 
-        public void Remove(IEnumerable<CustomerDataObject> customers)
+        public IEnumerable<CustomerDataObject> Remove(IEnumerable<CustomerDataObject> customers)
         {
-            PerformRemoveObjects<CustomerDataObject, Customer>(customers, _customerRepository);
+            return PerformRemoveObjects<CustomerDataObject, Customer>(customers, _customerRepository);
+        }
+
+        public CustomerDataObject GetByID(Guid ID)
+        {
+            var customer = _customerRepository.Find(ID);
+
+            return Mapper.Map<Customer, CustomerDataObject>(customer);
         }
 
         public IEnumerable<CustomerDataObject> GetByRegion(string customerRegion)
@@ -48,5 +55,8 @@ namespace EF5Repository.Service.ServiceImpls
         {
             throw new NotImplementedException();
         }
+
+
+
     }
 }

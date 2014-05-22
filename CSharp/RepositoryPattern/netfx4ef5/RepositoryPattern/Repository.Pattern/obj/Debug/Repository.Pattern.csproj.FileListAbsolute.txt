@@ -60,5 +60,4 @@ C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern
 C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\Repository.Pattern\bin\Debug\System.Net.Http.xml
 C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\Repository.Pattern\obj\Debug\Repository.Pattern.dll
 C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\Repository.Pattern\obj\Debug\Repository.Pattern.pdb
-C:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\Repository.Pattern\obj\Debug\Repository.Pattern.csprojResolveAssemblyReference.cache
 E:\GitRepos\TrainingRecipes\CSharp\RepositoryPattern\netfx4ef5\RepositoryPattern\Repository.Pattern\obj\Debug\Repository.Pattern.csprojResolveAssemblyReference.cache
