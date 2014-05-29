@@ -6,9 +6,9 @@
 </head>
 <body>
 	<h3>Polls</h3>
-{% if lastest_poll_list %}
+{% if latest_poll_list %}
 	<ul>
-	{% for poll in lastest_poll_list %}
+	{% for poll in latest_poll_list %}
 		<li><a href="{% url 'polls:detail' poll.id %}">{{ poll.question }}</a></li>
 	{% endfor %}
 	</ul>
