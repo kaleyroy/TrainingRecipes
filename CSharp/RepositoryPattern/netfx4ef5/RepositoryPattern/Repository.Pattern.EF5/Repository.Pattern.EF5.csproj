@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="QueryObjectSpec.cs" />
     <Compile Include="Entity.cs" />
     <Compile Include="DataContext.cs" />
     <Compile Include="IEFRepository.cs" />

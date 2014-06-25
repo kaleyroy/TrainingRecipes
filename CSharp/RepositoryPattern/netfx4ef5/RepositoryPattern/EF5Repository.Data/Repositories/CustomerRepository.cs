@@ -32,9 +32,7 @@ namespace EF5Repository.Data.Repositories
 
         public static IEnumerable<Customer> SelectByRegionAndCity(this IRepository<Customer> repository, string region, string city)
         {
-            CustomerQuery filterQuery = new CustomerQuery();
-
-            return repository.Query(filterQuery.ByRegion(region).ByCity(city))
+            return repository.Query(CustomerQuery.LivesIn(city, region))
                              .Select().AsEnumerable();
                              
         }

@@ -8,20 +8,35 @@ using EF5Repository.Data.Models;
 
 namespace EF5Repository.Data.Queries
 {
-    public class CustomerQuery : QueryObject<Customer>
+    public static class CustomerQuery
     {
-        public CustomerQuery ByRegion(string region)
-        {
-            Add(c => c.Region.Equals(region));
+        //public CustomerQuery ByRegion(string region)
+        //{
+        //    Add(c => c.Region.Equals(region));
 
-            return this;
+        //    return this;
+        //}
+
+        //public CustomerQuery ByCity(string city)
+        //{
+        //    And(c => c.City.Equals(city));
+
+        //    return this;
+        //}
+
+        public static QueryObject<Customer> LivesInRegion(string region)
+        {
+           return new QueryObjectSpec<Customer>(c => c.Region.Equals(region));
         }
 
-        public CustomerQuery ByCity(string city)
+        public static QueryObject<Customer> LivesInCity(string city)
         {
-            And(c => c.City.Equals(city));
+            return new QueryObjectSpec<Customer>(c => c.City.Equals(city));
+        }
 
-            return this;
+        public static QueryObject<Customer> LivesIn(string city, string region)
+        {
+            return new QueryObjectSpec<Customer>(LivesInCity(city).And(LivesInRegion(region)));
         }
     }
 }
